@@ -1,0 +1,135 @@
+
+:root {
+  --background-color: #f5f0e1;
+  --card-bg-color: #e8e3d3;
+  --text-color: #333;
+  --border-color: #bbb6a5;
+}
+
+.DoneTasksContainer {
+  background-color: var(--background-color);
+  border-radius: 25px;
+  padding: 25px;
+  width: 27vw ;
+  max-width: 28vw;
+  height: 40vh;
+  margin: 0 auto;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+.DoneTasksTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: var(--text-color);
+}
+
+.DoneTasksSubtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.DoneTasksGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.DoneTaskCard {
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  padding: 15px 20px;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.DoneTaskTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 20px;
+  color: var(--text-color);
+}
+
+.DoneTaskCategory {
+  font-size: 14px;
+  margin: 0 0 5px 20px;
+  color: var(--text-color);
+}
+
+.DoneTaskDate {
+  position: absolute;
+  top: 2vh;
+  right: 4vw;
+  font-size: 12px;
+  color: #777;
+}
+
+.RemoveDoneTaskBtn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #777;
+}
+
+.RemoveDoneTaskBtn:hover {
+  color: #333;
+}
+
+.EmptyState {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+  font-style: italic;
+}
+
+
+.DoneTasksTitle::after {
+  content: 'KEEP GOING!';
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 3px;
+  color: #666;
+}
+
+
+.DoneTaskTitle::before {
+  content: 'ⓘ';
+  position: absolute;
+  left: 15px;
+  font-size: 16px;
+  color: #666;
+}
+.ScrollableTasksGrid {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

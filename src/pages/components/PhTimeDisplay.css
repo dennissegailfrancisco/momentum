@@ -1,0 +1,88 @@
+
+.PhTimeContainer {
+    font-family: Arial, sans-serif;
+    width: 30vw;
+    padding: 15px;
+    background-color: #f4f1e6;
+    border-radius: 10px;
+  }
+  
+  .PhTimeHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .PhTimeIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .PhTimeTitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .PhTimeDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .PhTimeBox {
+    background-color: #dfd9c2;
+    border: 1px solid #ccc8b6;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    flex-grow: 1;
+    min-width: 100px;
+  }
+  
+  .PhTimeLabel {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  
+  .PhTimeSeparator {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 5px;
+    color: #222;
+  }
+  
+  .PhTimePeriodContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  
+  .PhTimePeriodButton {
+    background-color: #dfd9c2;
+    border: 1px solid #ccc8b6;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    width: 50px;
+  }
+  
+  .PhTimePeriodActive {
+    background-color: #c2b89d;
+    color: #333;
+  }
+  
+
+  .PhTimeHour, .PhTimeMinute {
+    user-select: none;
+  }

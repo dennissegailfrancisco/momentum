@@ -1,0 +1,105 @@
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f2e8;
+    padding: 20px;
+  }
+  
+  .registration-content {
+    width: 100%;
+    max-width: 800px;
+    background-color: #f5f2e8;
+    border-radius: 5px;
+
+    padding: 30px;
+  }
+  
+  .RegisterLogoSection {
+    text-align: left;
+
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .tagline {
+    color: #a29d8f;
+    margin-top: 5px;
+  }
+  
+  .registration-form-section {
+    padding: 20px 0;
+  }
+  
+  .RegistrationFormTitle {
+    color: #a29d8f;
+    margin-bottom: 30px;
+    font-weight: normal;
+ 
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #a29d8f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #8a8577;
+  }
+  
+  .error-message {
+    color: #d9534f;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+    .registration-content {
+      padding: 20px;
+    }
+    
+    .logo {
+      font-size: 2rem;
+    }
+    
+    .form-title {
+      text-align: center;
+    }
+  }

@@ -1,0 +1,73 @@
+.focus-container {
+    text-align: center;
+
+    height: 100vh;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50vw;
+    margin: 40px auto;
+  }
+  
+  .focus-container h1 {
+    font-size: 2rem;
+  }
+  
+  .timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #23221E;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #858275 ;
+    color: white;
+ 
+  }
+  
+  .btn:hover {
+    background: #858275;
+  }
+  
+  .reset-btn {
+    background: #D7D3BF;
+    border: 2px solid #858275;
+   
+    color: #23221E;
+  }
+  
+  .reset-btn:hover {
+    background: #858275;
+    color: white;
+    border: 2px solid #858275;
+  }
+  
+  .input-group {
+    margin-top: 15px;
+  }
+  
+  input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.FocusQuoteContainer{
+
+  margin-top: 5vh;
+}
+.FocusQuoteContainer .QuoteContainer {
+  background-color: #d6d5cc; 
+  border: 2px #23221E solid; 
+  margin-bottom: 5vh;
+  
+}

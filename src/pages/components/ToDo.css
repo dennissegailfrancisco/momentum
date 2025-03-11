@@ -1,0 +1,508 @@
+
+.ToDoContainer {
+  max-width: 60vw;
+  width:60vw ;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.ToDoTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.FolderContainer {
+  position: relative;
+  margin-top: 50px; 
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+.FolderTabs {
+  position: relative;
+  height: 40px;
+  margin-bottom: -1px; 
+}
+
+.FolderTab {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  min-width: 150px;
+  padding: 10px 20px;
+  background-color: #d5cab1; 
+  color: #333;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.FolderTab.active {
+  background-color: #e4dfd2; 
+  height: 45px;
+  z-index: 10 !important;
+}
+
+.FolderTab:hover {
+  background-color: #e9e5d8;
+}
+
+.AddTaskTab {
+  background-color: #eaece1;
+  margin-left: 10vh; 
+}
+
+
+.FolderContent {
+  background-color: #e4dfd2; 
+  border: 1px solid #bbb;
+  border-radius: 0 10px 10px 10px; 
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0) 20%);
+  min-height: 60vh!important;
+}
+.RemoveCategoryBtn {
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  width: 10vw;
+  height: 3vh;
+  font-size: 10px;
+  background-color: #23221E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.RemoveCategoryBtn:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+.FolderTab {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  min-width: 150px;
+  padding: 10px 20px;
+  background-color: #d5cab1; 
+  color: #333;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.FolderTab.active {
+  background-color: #e4dfd2; 
+  height: 45px;
+  z-index: 10 !important;
+}
+
+.FolderTab:hover {
+  background-color: #e9e5d8;
+}
+
+.AddTaskTab {
+  background-color: #eaece1;
+  margin-left: 10vh; 
+}
+
+.FolderContent {
+  background-color: #e4dfd2; 
+  border: 1px solid #bbb;
+  border-radius: 0 10px 10px 10px; 
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0) 20%);
+  min-height: 400px;
+}
+
+.RemoveCategoryBtn {
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  width: 10vw;
+  height: 3vh;
+  font-size: 10px;
+  background-color: #23221E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.RemoveCategoryBtn:hover {
+  opacity: 1;
+}
+
+.FolderContent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.TasksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  position: relative;
+  z-index: 1;
+}
+
+.TaskCard {
+  background-color: #f6f3e9;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 15vw;
+  max-width: 15vw;
+  border: 1px solid #ddd;
+}
+
+.TaskCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 18px,
+      rgba(0, 0, 0, 0.05) 19px,
+      transparent 20px
+    );
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.CloseTaskBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+  z-index: 5;
+}
+
+.TaskTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.TaskCategory {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #d5cab1;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.TaskDate {
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.TaskDescription {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+.TaskDescription p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.TaskActions {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.EditBtn, .DoneBtn {
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.EditBtn {
+  background-color: #e6e0d0;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.DoneBtn {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ModalContent {
+  background-color: #e6e0d0;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 450px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ModalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #000;
+}
+
+.ModalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.InputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.InputGroup label {
+  font-weight: 500;
+  color: #000;
+}
+
+.InputGroup input, 
+.InputGroup select, 
+.InputGroup textarea {
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f0ebe0;
+  font-size: 16px;
+}
+
+.ModalTaskTitle{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.InputGroup input {
+  width: 10vw;
+}
+
+.CategoryInputContainer {
+  position: relative;
+}
+
+.CategoryInput{
+  width: 20vw !important;
+}
+
+.NewCategoryGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.NewCategoryGroup input {
+  flex: 1;
+}
+
+.InputGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ModalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.CloseBtn {
+  background-color: #e6e0d0;
+  border: 1px solid #999;
+  color: #333;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.AddTaskBtn {
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.AddCategoryBtn {
+  background-color: #e6e0d0;
+  border: 1px solid #999;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ScrollableTasksGrid {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.ScrollableTasksGrid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+@media (max-width: 768px) {
+  .TasksGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .FolderTabs {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  
+  .FolderTab {
+    position: relative;
+    left: 0 !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: auto;
+    flex: 1;
+  }
+  
+  .FolderContent {
+    border-radius: 10px;
+    padding: 15px;
+
+  }
+  
+  .ModalContent {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .ModalButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .CloseBtn, .ModalButtons .AddTaskBtn {
+    width: 100%;
+  }
+  
+  .NewCategoryGroup {
+    flex-direction: column;
+  }
+}
